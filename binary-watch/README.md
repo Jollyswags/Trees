@@ -1,3 +1,4 @@
+[Discussion Post (created on 16/7/2021 at 18:43)](https://leetcode.com/problems/binary-watch/discuss/1407019/Java-oror-easy-to-understand)  
 <h2>401. Binary Watch</h2><h3>Easy</h3><hr><div><p>A binary watch has 4 LEDs on the top which represent the hours (0-11), and the 6 LEDs on the bottom represent the minutes (0-59). Each LED represents a zero or one, with the least significant bit on the right.</p>
 
 <ul>
