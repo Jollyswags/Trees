@@ -1,18 +1,24 @@
 class Solution {
-   public List<List<Integer>> allPathsSourceTarget(int[][] graph) {
-        List<List<Integer>> paths = new ArrayList<>();
-        helper(graph, 0, paths, new ArrayList<>(), graph.length - 1);
+    List<List<Integer>> paths;
+    public List<List<Integer>> allPathsSourceTarget(int[][] graph) {
+        paths=new ArrayList<>();
+        helper(graph,0,paths,new ArrayList<>(), graph.length-1);
         return paths;
+        
     }
-    
-    void helper(int[][]graph, int currentNode, List<List<Integer>> paths, List<Integer> path, int target) {
-        path.add(currentNode);
-        if (currentNode == target) {
+    public void helper(int graph[][],int curr,List<List<Integer>> paths, List<Integer> path, int tar)
+    {
+        path.add(curr);
+        if(curr==tar)
+        {
             paths.add(path);
             return;
         }
-        for(int i : graph[currentNode]) {
-            helper(graph,i, paths, new ArrayList<Integer>(path), target);
+        for(int i: graph[curr])
+        {
+            helper(graph,i,paths,new ArrayList<Integer>(path), tar);
+            
         }
+            
     }
 }
