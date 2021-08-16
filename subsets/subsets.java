@@ -8,6 +8,8 @@ class Solution {
       output.add(new ArrayList(curr));
       return;
     }
+      if(first>=n)
+          return;
     for (int i = first; i < n; ++i) {
       // add i into the current combination
       curr.add(nums[i]);
